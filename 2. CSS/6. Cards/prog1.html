@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title> Bill </title>
+        <style>
+            body{
+                background-color: lightgray;
+                text-align: center;
+            }
+            .box {
+                background-color: white;
+                width: 150px;
+                padding: 10px;
+                box-shadow: 0 5px 15px ;
+            }
+            .container{
+                display:flex;
+                gap: 15px;
+                justify-content: center;
+            }
+
+            .box button {
+                background-color: green;
+                color: white;
+            }
+
+            .box button:hover {
+                /* background: lightgreen; */
+                /* border: 4px solid blue; */
+                transform: scale(1.1);
+                /* text-decoration: underline; */
+                cursor: pointer;
+                background: linear-gradient(to right, red, blue);
+            }
+            .box img{
+                border-radius: 50%;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1> Choose Your Plan!</h1>
+        <div class="container">
+            <div class="box">
+                <img src="f.png" width="50" height="50"> 
+                <h2> Free </h2>
+                <p> $0 Month </p>
+                <button> Select </button>
+            </div>
+
+            <div class="box">
+                <img src="m.png" width="50" height="50"> 
+                <h2> Monthly </h2>
+                <p> 5$ Month </p>
+                <button> Select </button>
+            </div>
+
+            <div class="box">
+                <img src="y.png" width="50" height="50"> 
+                <h2> Yearly </h2>
+                <p> 25$ Year </p>
+                <button> Select </button>
+            </div>
+        </div>
+    </body>
+
+</html>
