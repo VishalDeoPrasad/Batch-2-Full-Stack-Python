@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>box</title>
+        <style> 
+            *{ padding: 0px; margin: 0px;
+            }
+            .container{
+                background-color: lightgreen;
+                display: flex;
+                gap: 20px;
+                justify-content: center;
+                align-items: center;
+                height: 400px;
+                padding: 40px;
+            }
+            .box{
+                background-color: orange;
+                height: 100px;
+                width: 200px;
+                display: flex;
+                font-size: 35px;
+                color: white;
+                justify-content: center;
+                align-items: center;
+                border-radius: 10px;
+                box-shadow: 0px 2px 5px #ac9e9e;   
+            }
+            .box1 { flex-grow: 1; }
+            .box2 { flex-grow: 2; }
+            .box3 { flex-grow: 3; }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box box1"> 1 </div>
+            <div class="box box2"> 2 </div>
+            <div class="box box3"> 3 </div>
+        </div>
+    </body>
+</html>

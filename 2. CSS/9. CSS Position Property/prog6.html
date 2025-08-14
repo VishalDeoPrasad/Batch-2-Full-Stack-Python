@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Web</title>
+        <style>
+            .container{
+                border: 2px dashed black;
+                width: 400px;
+                height: 200px;
+                position: relative;
+            }
+            .box1{
+                position: relative;
+                background-color: blue;
+                width: 70px;
+                height: 100px;
+            }
+            .box2{
+                position: absolute;
+                background-color: red;
+                width: 70px;
+                height: 100px;
+                right: 1px;
+                top: 1px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box1"> 
+                Relative
+            </div>
+
+            <div class="box2">
+                Absolute
+            </div>
+        </div>
+    </body>
+</html>
