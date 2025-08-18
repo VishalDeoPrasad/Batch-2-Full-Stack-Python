@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title> Grid </title>
+        <style>
+            .container{
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+                gap: 10px;
+            }
+            .box{
+                background-color: rgb(167, 167, 223);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 10px;
+                height: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container"> 
+            <div class="box"> A </div>
+            <div class="box"> B </div>
+            <div class="box"> C </div>
+            <div class="box"> D </div>
+            <div class="box"> E </div>
+            <div class="box"> F </div>
+        </div>
+    </body>
+</html>

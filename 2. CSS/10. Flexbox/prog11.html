@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #f4f4f4;
+        }
+        h1{
+            text-align: center;
+            background-color: #333;
+            color: white
+        }
+        .container{
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .product{
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0px 2px 5px gray;
+            transition: transform 0.3s;
+        }
+        .product:hover{
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <h1> Online Store</h1>
+    <div class="container">
+        <div class="product">
+            <img src="bag.png" width="250" height="150">
+            <h3> Bag </h3>
+            <p> ₹400 </p>
+        </div>
+
+        <div class="product">
+            <img src="laptop.png" width="250" height="150">
+            <h3> Laptop </h3>
+            <p> ₹40000 </p>
+        </div>
+
+        <div class="product">
+            <img src="headphone.png" width="250" height="150">
+            <h3> Headphone </h3>
+            <p> ₹2000 </p>
+        </div>
+
+        <div class="product">
+            <img src="tv.png" width="250" height="150">
+            <h3> TV </h3>
+            <p> ₹30000 </p>
+        </div>
+
+        <div class="product">
+            <img src="keyboard.png" width="250" height="150">
+            <h3> Keyboard </h3>
+            <p> ₹400 </p>
+        </div>
+
+        <div class="product">
+            <img src="mouse.png" width="250" height="150">
+            <h3> Mouse </h3>
+            <p> ₹299 </p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title> Web </title>
+        <style>
+            .container{ 
+                display: grid; /* Turn the container into a CSS Grid layout */
+                gap:20px; /* Add spacing of 20px between grid items */
+                
+                /* Define grid columns: 
+                   - First column is fixed width = 150px
+                   - Second column takes the remaining space (1fr = flexible share) */
+                grid-template-columns: 150px 1fr;
+                
+                /* Define grid rows:
+                   - First row = 50px (Header)
+                   - Second row = flexible space (1fr)
+                   - Third row = 60px (Footer) */
+                grid-template-rows: 50px 1fr 60px;
+
+                /* Name grid areas for easier placement of items */
+                grid-template-areas: 
+                    "header header"   /* Row 1: header spans across 2 columns */
+                    "sidebar main"    /* Row 2: sidebar in col1, main in col2 */
+                    "footer footer";  /* Row 3: footer spans across 2 columns */
+
+                height: 100vh; /* Full viewport height */
+            }
+
+            .box{
+                background-color: lightgreen; /* Default background color */
+                display: flex;                /* Use Flexbox inside each box */
+                justify-content: center;      /* Center content horizontally */
+                align-items: center;          /* Center content vertically */
+            }
+
+            .header {
+                /* Place this box into the "header" grid area */
+                grid-area: header;
+                background-color: lightblue; /* Override default color */
+            }
+
+            .footer{
+                /* Place this box into the "footer" grid area */
+                grid-area: footer;
+                background-color: #333; /* Dark footer */
+                color: white;           /* White text */
+            }
+
+            .main{
+                /* Place this box into the "main" grid area */
+                grid-area: main;
+                background-color: rgb(221, 37, 37); /* Red content area */
+            }
+
+            .sidebar{
+                /* Place this box into the "sidebar" grid area */
+                grid-area: sidebar;
+                /* Default green background from .box will apply */
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <!-- Grid items placed according to grid-template-areas -->
+            <div class="box header"> Header </div>
+            <div class="box sidebar"> Sidebar </div>
+            <div class="box main"> Main </div>
+            <div class="box footer"> Footer </div>
+        </div>
+    </body>
+</html>
