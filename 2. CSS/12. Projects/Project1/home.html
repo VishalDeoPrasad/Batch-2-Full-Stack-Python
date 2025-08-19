@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Self</title>
+    <style>
+        * { margin: 0; }
+        .myself{
+            background: url('home_bg.png') no-repeat center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            flex-direction: column;
+            text-shadow: 2px 2px 5px #434141;
+        }
+        .myself h1 {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+        .myself p{
+            font-size: xx-large;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            padding: 10px 40px;
+            border-radius: 25px;
+            background-color: #ff9800;
+            color: white;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .btn:hover{
+            background: green;
+        }
+        header{
+            background: rgba(0,0,0,0.5);
+            position: fixed;
+            width: 100%;
+            text-align: center;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+            margin: 2px 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        a:hover{
+            color:  #ff9800;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href=""> Home </a>
+            <a href=""> About </a>
+            <a href=""> Interest </a>
+            <a href=""> Passion </a>
+            <a href=""> Projects </a>
+            <a href=""> Contact </a>
+        </nav>
+    </header>
+
+    <section class="myself">
+        <h1> Hi, I'm Vishal Kumar👋</h1>
+        <p> Machine Learning Engineer | Educator | AI Enthusiast</p>
+        <button class="btn">Explore My Work</button>
+    </section>
+</body>
+</html>
