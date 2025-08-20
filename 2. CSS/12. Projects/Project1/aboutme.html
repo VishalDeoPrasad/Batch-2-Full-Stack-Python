@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>About Me</title>
+    <style>
+        body{
+            background: linear-gradient(blue, lightblue);
+            background-repeat: no-repeat;
+            color: white;
+            /* text-shadow: 0px 2px 5px rgba(0,0,0,0.7); */
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            padding: 130px;
+            flex-wrap: wrap;
+        }
+        .profile img{
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            border: 7px solid white;
+            box-shadow: 0px 5px 15px rgba(0,0,0,0.5);
+        }
+        .tech{
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .tech div{
+            background: rgba(255,255,255,0.25);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            padding: 10px 15px;
+        }
+        .tech img{
+            width: 30px;
+            height: 30px;
+        }
+        .intro{
+            max-width: 700px;
+        }
+        .intro h1{
+            font-size: 40px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div class="profile">
+            <img src="dp.jpeg"> 
+        </div>
+        <div class="intro">
+            <h1>🌟 About Me </h1>
+            <p> Hi, I'm <b>Vishal Kumar</b>, a <b>Machine Learning Engineer</b> & <b>Educator</b> passionate abut. </p>
+            <div class="tech">
+                <div>
+                    <img src="https://img.icons8.com/color/48/artificial-intelligence.png">
+                        AI & Robotics
+                </div>
+                <div>
+                    <img src="https://img.icons8.com/color/48/combo-chart--v1.png">
+                        Data Science
+                </div>
+                <div>
+                    <img src="https://img.icons8.com/color/48/teacher.png">
+                        Teaching 
+                </div>
+                <div>
+                    <img src="https://img.icons8.com/color/48/laptop.png">
+                        Real-world Tech
+                </div>
+            </div>
+            <p>I love <b>breaking down complex concepts</b> into simple, fun, and hands-on lessons.  
+              My teaching style is <b>project-based</b> because I believe students learn best when they create. </p>
+        </div>
+    </section>
+</body>
+</html>
