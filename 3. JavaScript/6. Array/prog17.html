@@ -1,0 +1,23 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <script>
+            let student = ["Amit", "Rahul", "Soni", "Rohit", "KVNV", "Ram", 'shayam'];
+            let marks = [98, 67, 23, 65, 90, 15, 30];
+            let pass_student = [];
+            let not_pass_student = [];
+            for (let i = 0; i < marks.length; i++) {
+                if (marks[i] >= 50) {
+                    pass_student.push(student[i]);
+                }
+                else {
+                    not_pass_student.push(student[i]);
+                }
+            }
+            console.log("Pass Student:", pass_student);
+            console.log("Not Pass Student:", not_pass_student);
+        </script>
+    </body>
+</html>
