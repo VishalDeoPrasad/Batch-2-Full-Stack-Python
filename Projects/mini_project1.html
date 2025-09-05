@@ -1,0 +1,34 @@
+<html>
+<head>
+    <title>Cal </title>
+</head>
+<body>
+    <h1> Simple Calculator </h1>
+    <input type="number" id="num1" placeholder="First Number:">
+    <input type="number" id="num2" placeholder="Second Number:">
+    <br><br>
+    <button onclick="calculator('+')">Add➕</button>
+    <button onclick="calculator('-')">Sub➖</button>
+    <button onclick="calculator('*')">Mult✖️</button>
+    <button onclick="calculator('/')">Div➗</button>
+    <p id="output"> </p> 
+    <script>
+        function calculator(op){
+            let n1 = Number(document.getElementById('num1').value);
+            let n2 = Number(document.getElementById('num2').value);
+            if (op == '+'){
+                document.getElementById('output').innerText = n1+n2;
+            }
+            else if (op == '-'){
+                document.getElementById('output').innerText = n1-n2;
+            }
+            else if (op == '*'){
+                document.getElementById('output').innerText = n1*n2;
+            }
+            else if (op == '/'){
+                document.getElementById('output').innerText = n1/n2;
+            }
+        }
+    </script>
+</body>
+</html>

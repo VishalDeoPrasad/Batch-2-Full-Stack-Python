@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+            padding-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="col"> <br> <br>
+    <button onclick="changeBG()"> Change BG </button>
+    <script>
+        function changeBG(){
+            let color = document.getElementById('col').value;
+            document.body.style.backgroundColor = color;
+        }
+    </script>
+</body>
+</html>
